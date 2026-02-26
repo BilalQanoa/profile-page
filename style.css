@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
 
 * {
     font-family: "Roboto", sans-serif;
@@ -7,7 +7,9 @@
     box-sizing: border-box;
 }
 
-.navbar{
+/* NAVBAR */
+
+.navbar {
     background: black;
     display: flex;
     align-items: center;
@@ -21,14 +23,14 @@
     font-size: 1.6em;
 }
 
-a {
+.navbar nav a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.797);
     padding: 0 16px;
     font-size: 0.8em;
 }
 
-a:hover{
+.navbar nav a:hover {
     color: white;
 }
 
@@ -37,6 +39,91 @@ a:hover{
     background-color: rgb(23 162 184);
     border: none;
     padding: 3px 12px;
-    margin-left: auto;
 }
 
+/* CONTENT LAYOUT */
+
+.content {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    padding: 32px 200px;
+}
+
+.col1 {
+    margin-right: 64px;
+}
+
+/* CARD */
+
+.card {
+    width: 100%;
+}
+
+/* TOP BOX */
+
+.top-box {
+    height: 120px;
+    background-color: #5f9fa0;
+    position: relative;
+}
+
+.top-box img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 3px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(224, 223, 223, 0.821);
+    position: absolute;
+    bottom: -60px;
+    left: 72px;
+}
+
+/* INFO BOX */
+
+.info-box {
+    padding: 70px 0 0 72px;
+    border: 3px solid rgba(224, 223, 223, 0.821);
+}
+
+.info-box h2 {
+    font-size: 2.5em;
+}
+
+/* LOCATION */
+
+.location {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.map {
+    width: 16px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* DESCRIPTION */
+
+.info-box p {
+    margin-top: 16px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+/* EDIT PROFILE */
+
+.edit-profile {
+    margin: 24px 0;
+}
+
+.gear {
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.edit {
+    font-size: 1.2em;
+    color: rgb(21, 44, 97);
+}
