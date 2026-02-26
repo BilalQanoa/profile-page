@@ -24,7 +24,7 @@
 
 .navbar nav a {
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.797);
+    color: rgba(255, 255, 255, 0.8);
     padding: 0 16px;
     font-size: 0.8em;
 }
@@ -34,18 +34,18 @@
 }
 
 .navbar button {
-    color: white;
-    background-color: rgb(23 162 184);
-    border: none;
-    padding: 3px 12px;
     margin-left: auto;
+    background: rgb(23 162 184);
+    border: none;
+    color: white;
+    padding: 3px 12px;
 }
 
-/* CONTENT LAYOUT */
+/* LAYOUT */
 
 .content {
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 65% 35%;
     padding: 32px 200px;
 }
 
@@ -53,18 +53,15 @@
     margin-right: 64px;
 }
 
-/* CARD */
+/* PROFILE CARD */
 
-.card {
-    width: 100%;
+.card{
     margin-bottom: 32px;
 }
 
-/* TOP BOX */
-
 .top-box {
     height: 120px;
-    background-color: #5f9fa0;
+    background: #5f9fa0;
     position: relative;
 }
 
@@ -72,30 +69,21 @@
     width: 120px;
     height: 120px;
     object-fit: cover;
-    border: 3px solid white;
     border-radius: 50%;
-    box-shadow: 0 0 0 3px rgba(224, 223, 223, 0.821);
+    border: 3px solid white;
+    box-shadow: 0 0 0 3px rgba(224, 223, 223, 0.8);
     position: absolute;
     bottom: -60px;
     left: 72px;
 }
 
-/* INFO BOX */
-
 .info-box {
     padding: 70px 0 0 72px;
-    border: 3px solid rgba(224, 223, 223, 0.821);
+    border: 3px solid rgba(224, 223, 223, 0.8);
 }
-
-.info-box h2 {
-    font-size: 2.5em;
-}
-
-/* LOCATION */
 
 .location {
     margin-top: 10px;
-    font-size: 1.2em;
 }
 
 .map {
@@ -104,15 +92,11 @@
     margin-right: 10px;
 }
 
-/* DESCRIPTION */
-
 .info-box p {
     margin-top: 16px;
-    font-size: 1.2em;
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 1.3em;
 }
-
-/* EDIT PROFILE */
 
 .edit-profile {
     margin: 24px 0;
@@ -125,31 +109,78 @@
 }
 
 .edit {
-    font-size: 1.2em;
-    color: rgb(21, 44, 97);
+    color: blue;
 }
+
+/* BOXES */
 
 .head-box {
     padding: 16px 32px;
+    background: rgb(50, 50, 50);
     color: white;
-    background-color: rgb(50, 50, 50);
 }
 
 .content-box {
     padding: 16px 32px;
-    border: 3px solid rgba(224, 223, 223, 0.821);
+    border: 3px solid rgba(224, 223, 223, 0.8);
 }
 
-.content-box h2 {
-    font-size: 1.8em;
-}
-
-.content-box p {
-    font-size: 1.4em;
-    color: grey;
-    padding: 16px 0;
-}
-
+.content-box p,
 .content-box h3 {
     font-size: 1.4em;
+    padding: 10px 0;
+}
+
+/* NUMBER BADGE */
+
+.num {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px;
+    padding: 6px 10px;
+    min-width: 32px;
+    height: 32px;
+    background: #ccc;
+    color: #333;
+    border-radius: 50%;
+}
+
+/* CONNECTIONS */
+
+.connections {
+    display: flex;
+    align-items: center;
+}
+
+.connections:not(:last-child) {
+    margin-bottom: 6px;
+}
+
+.connections img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.connections h2 {
+    padding: 0 16px;
+    font-size: 1.4em;
+}
+
+.accept {
+    margin-left: auto;
+    display: flex;
+    gap: 8px;
+}
+
+/* LINKS */
+
+.content-box a {
+    color: blue;
+    font-size: 1.6em;
+}
+
+.requests {
+    margin-bottom: 32px;
 }
