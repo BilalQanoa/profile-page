@@ -9,128 +9,103 @@
 </head>
 
 <body>
-
+    
     <header class="navbar">
-        <h1>Profile</h1>
-
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">My Profile</a>
-            <a href="#">Find Connections</a>
-        </nav>
-
-        <button>Sign Out</button>
+        <div>
+            <p class="logo">Profile</p>
+            <nav class="navigations">
+                <a href="#home">Home</a>
+                <a href="#my-profile">My Profile</a>
+                <a href="find-connections">Find Connections</a>
+            </nav>
+        </div>
+        <button type="button">Sign Out</button>
     </header>
 
-    <section class="content">
-
-        <div class="col1">
-
-            <div class="card">
-                <div class="top-box">
-                    <img src="images/img.png">
+    <section class="main">
+        <div class="info">
+            <div class="personal-card">
+                <div class="top-card">
+                    <img src="images/img.png" alt="" class="profile-img">
                 </div>
-
-                <div class="info-box">
-                    <h1>Jane Doe</h1>
-
-                    <h2 class="location">
-                        <img class="map" src="icons/map-marker.png">
-                        Seattle
-                    </h2>
-
-                    <p>
-                        Developer | Engineer | Problem Solver <br>
-                        Master of shadow and the Internet
-                    </p>
-
-                    <div class="edit-profile">
-                        <img class="gear" src="icons/gear.png">
-                        <a class="edit" href="#">edit profile</a>
-                    </div>
+                <div class="info-card">
+                    <h1 class="name">Jane Doe</h1>
+                    <h2 class="position"><img src="icons/map-marker.png" alt=""><span>Seattle</span></h2>
+                    <p class="descriptions">Developer | Engineer | Problem Solver <br>Master of shadows and the Internet!</p>
+                    <a class="edit" href=""><img src="icons/gear.png" alt=""><span>edit profile</span></a>
                 </div>
             </div>
-
-            <div class="education">
-                <h2 class="head-box">Education</h2>
-                <div class="content-box">
-                    <h2>University of Palestine - Software Engineer</h2>
-                    <p>September 2020 - June 2025</p>
-                    <h3>Triple black belt in Python, MERN and C# ...</h3>
+            <div class="general-card">
+                <div class="name-card">
+                    <h2>Education</h2>
+                </div>
+                <div class="info-card">
+                    <h2 class="edu-title">
+                        Coding Dojo - Full Stack bootcamb</h2>
+                    <p class="date">Dec 2019 - Mar 2020</p>
+                    <p class="details">Trible black belt in Python, MERN and C#</p>
                 </div>
             </div>
-
         </div>
-
-        <div class="col2">
-
-            <div class="requests">
-                <h2 class="head-box">
-                    <span class="num">2</span> Connection Requests
-                </h2>
-
-                <div class="content-box">
-
-                    <div class="connections">
-                        <img src="images/adrien-s.jpg">
-                        <h2>Adrian S</h2>
+        <div class="connections">
+            <div class="general-card">
+                <div class="name-card">
+                    <span>2</span>
+                    <h2>Connections Requests</h2>
+                </div>
+                <div class="info-card">
+                    <div class="request">
+                        <div class="account">
+                            <img src="images/adrien-s.jpg" alt="">
+                            <h3>Adrien S</h3>
+                        </div>
                         <div class="accept">
-                            <img src="icons/accept-circle.png">
-                            <img src="icons/close-circle.png">
+                            <button type="button"><img src="icons/accept-circle.png" alt=""></button>
+                            <button type="button"><img src="icons/close-circle.png" alt=""></button>
                         </div>
                     </div>
-
-                    <div class="connections">
-                        <img src="images/alayne-s.jpg">
-                        <h2>Alayne S</h2>
+                    <div class="request">
+                        <div class="account">
+                            <img src="images/alayne-s.jpg" alt="">
+                            <h3>Alayne S</h3>
+                        </div>
                         <div class="accept">
-                            <img src="icons/accept-circle.png">
-                            <img src="icons/close-circle.png">
+                            <button type="button"><img src="icons/accept-circle.png" alt=""></button>
+                            <button type="button"><img src="icons/close-circle.png" alt=""></button>
                         </div>
                     </div>
-
                 </div>
             </div>
 
-            <div class="my-connection">
-                <h2 class="head-box">
-                    <span class="num">500+</span> Your Connections
-                </h2>
-
-                <div class="content-box">
-
-                    <div class="connections">
-                        <img src="images/anne-s.jpg">
-                        <h2>Anne S</h2>
-                    </div>
-
-                    <div class="connections">
-                        <img src="images/arry-s.jpg">
-                        <h2>Arry S</h2>
-                    </div>
-
-                    <div class="connections">
-                        <img src="images/jane-m.jpg">
-                        <h2>Jane M</h2>
-                    </div>
-
-                    <div class="connections">
-                        <img src="images/phil-s.jpg">
-                        <h2>Phil S</h2>
-                    </div>
-
+            <div class="general-card">
+                <div class="name-card">
+                    <span id="num">+500</span>
+                    <h2>Your Connections</h2>
                 </div>
-
-                <div class="content-box">
-                    <a href="#">View More</a>
+                <div class="info-card">
+                    <div class="account">
+                        <img src="images/anne-s.jpg" alt="">
+                        <h3>Anne S</h3>
+                    </div>
+                    <div class="account">
+                        <img src="images/jane-m.jpg" alt="">
+                        <h3>Jane M</h3>
+                    </div>
+                    <div class="account">
+                        <img src="images/phil-s.jpg" alt="">
+                        <h3>Phil S</h3>
+                    </div>
+                    <div class="account">
+                        <img src="images/todd-s.jpg" alt="">
+                        <h3>Todd S</h3>
+                    </div>
                 </div>
-
+                <div class="info-card">
+                    <a href="">View More</a>
+                </div>
             </div>
-
         </div>
-
     </section>
-
 </body>
 
 </html>
